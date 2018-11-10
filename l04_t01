@@ -1,0 +1,67 @@
+print "Введите сумму, что вы будите каждый месяц откладывать под процент: "
+mon = gets.to_i
+money = mon
+i = 0 
+puts"В каком году вы бы хотели забрать ваши деньги с учётом процентов?(год писать полностью)"
+years = gets.to_i
+number_month_in_years = years - 2018
+    if number_month_in_years >= 0 
+   
+        number_month_in_years = number_month_in_years*12
+     
+    
+     
+    else
+        puts"Была допущена ошибка при вводе"
+        
+        begin
+                puts"В каком году вы бы хотели забрать ваши деньги с учётом процентов?(год писать полностью)"
+             years = gets.to_i
+             number_month_in_years = years - 2018
+             if number_month_in_years >= 0
+                number_month_in_years = (number_month_in_years - 12)*12
+            i = 1
+             else
+             puts"Была допущена ошибка при вводе"
+                i=0
+            end
+        end while i == 0
+    end
+    
+   i = 0
+puts"В каком месяце вы бы хотели забрать ваши деньги с учётом процентов?(ответ давать цифрой)"
+month=gets.to_i
+if month > -1 && month < 13
+   
+      number_month = number_month_in_years + month
+     
+     while i < number_month
+    i = i + 1
+    moneyy = money + money/100*7
+    money = moneyy
+     end
+puts money
+
+    else
+        puts"Была допущена ошибка при вводе"
+        
+        begin
+                puts"В каком месяце вы бы хотели забрать ваши деньги с учётом процентов?(ответ давать цифрой)"
+             month = gets.to_i
+             
+             if month > -1 && month < 13
+                number_month = number_month_in_years + month
+     
+     while i < number_month
+    i = i + 1
+    moneyy = money + money/100*7
+    money = moneyy
+     end
+puts money
+                         else
+                         puts"Была допущена ошибка при вводе"
+                          i=0
+            end
+        end while i == 0
+
+    end
