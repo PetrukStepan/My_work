@@ -1,0 +1,6 @@
+
+puts'Сумма в рублях: '
+rubl = gets.to_f
+puts'Сумма в долорах: '
+dolar = (rubl/66.07)
+puts dolar

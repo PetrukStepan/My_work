@@ -1,0 +1,13 @@
+class Player 
+
+             def greeting
+                 puts "Как тебя велечать незнакомец?"
+                 name = gets
+                 puts "Какая твоя фамилия?"
+                 lastname = gets
+                print "Привет, #{name}#{lastname}"
+       end
+end
+ 
+        a = Player.new
+        a.greeting
