@@ -1,13 +1,20 @@
 class Player 
 
              def greeting
-                 puts "Как тебя велечать незнакомец?"
-                 name = gets
-                 puts "Какая твоя фамилия?"
+                 puts "Как тебя величать, незнакомец?"
+                 name = gets.chomp
+                 puts "Как твоя фамилия?"
                  lastname = gets
-                print "Привет, #{name}#{lastname}"
+                print "Привет, #{name} #{lastname}"
        end
 end
- 
+ class Figure 
+
+             def properties
+                 width = 3
+                 height = 5
+       end
+end
         a = Player.new
         a.greeting
+        
