@@ -1,0 +1,12 @@
+.black-dg-chess-piece{
+    background-color: darkgrey;
+    border: 2px solid black;
+    height: 75px;
+    width: 75px;
+}
+.white-dg-chess-piece{
+    background-color: beige;
+    border: 2px solid black;
+    height: 75px;
+    width: 75px;
+}
